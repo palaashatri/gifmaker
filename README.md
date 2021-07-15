@@ -1,16 +1,15 @@
-# GIF Maker with WASM (FFmpeg) & React
+# gifmaker
 
-Convert a video file to an animated GIF with Web Assembly. 
+* Convert a video file to an animated GIF with Web Assembly
+* Built with React.js + ffmpeg WASM
 
-[Watch](https://youtu.be/-OTc0Ki7Sv0) the full tutorial on YouTube and read [WASM React tutorial](https://fireship.io/lessons/wasm-video-to-gif/) on Fireship.io. 
+## How to run
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+* Runs the app in the development mode
+* Install dependencies : `npm install`
+* Run the app in terminal : `npm run`
+* Open http://localhost:8080 to view it in the browser.
 
-### npm start
-
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
+## Resources
+* [WASM + React... Easily build video editing software with JS & FFmpeg - Youtube](https://youtu.be/-OTc0Ki7Sv0)
+* [FFmpeg.wasm](https://ffmpegwasm.github.io/)
