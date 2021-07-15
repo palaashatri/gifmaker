@@ -1,5 +1,5 @@
 # gifmaker
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7131ee79-6dc1-479d-a6cb-63ca219e0c59/deploy-status)](https://app.netlify.com/sites/gifmakerwasm/deploys)
 * Convert a video file to an animated GIF with Web Assembly
 * Built with React.js + ffmpeg WASM
 
