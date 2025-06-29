@@ -1,132 +1,126 @@
-/* App.css - Add some personality and modern style */
+/* Windows 3.1 Aesthetic */
 body {
-  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background: #008080;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'MS Sans Serif', 'Segoe UI', Arial, sans-serif;
 }
 
 .App {
-  background: rgba(255,255,255,0.85);
-  border-radius: 18px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  background: #c0c0c0;
+  border: 2.5px solid #fff;
+  border-bottom: 2.5px solid #404040;
+  border-right: 2.5px solid #404040;
+  border-radius: 0;
+  box-shadow: 0 0 0 2px #808080, 4px 4px 0 0 #000;
   max-width: 420px;
   margin: 7vh auto 0 auto;
   padding: 2.5rem 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: popin 0.7s cubic-bezier(.68,-0.55,.27,1.55);
-}
-
-@keyframes popin {
-  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
-  100% { transform: scale(1) translateY(0); opacity: 1; }
-}
-
-.App code {
-  background: #FFF3;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-.App p {
-  margin: 0.4rem;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 h1 {
-  font-size: 2.2rem;
-  color: #f76d6d;
+  font-size: 1.7rem;
+  color: #000;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
+  background: #000080;
+  color: #fff;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin: 0 0 1.2rem 0;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #404040;
+  text-align: center;
+  box-shadow: 0 2px #808080;
 }
 
-h3 {
-  color: #f76d6d;
-  margin-top: 2rem;
-  margin-bottom: 0.5rem;
+.speech {
+  background: #fff;
+  color: #000;
+  border: 2px solid #808080;
+  border-radius: 0;
+  padding: 0.7rem 1.2rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.08rem;
+  box-shadow: 2px 2px 0 0 #808080;
+  position: relative;
+}
+.speech:after {
+  content: '';
+  position: absolute;
+  left: 18px;
+  bottom: -12px;
+  width: 0;
+  height: 0;
+  border-top: 12px solid #fff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
 }
 
 input[type="file"] {
   margin: 1.2rem 0 1.5rem 0;
   padding: 0.5rem;
-  border-radius: 8px;
-  border: 1px solid #fda085;
-  background: #fff7f0;
+  border-radius: 0;
+  border: 2px solid #808080;
+  background: #fff;
   font-size: 1rem;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
   cursor: pointer;
-  transition: border 0.2s;
+  box-shadow: 2px 2px 0 0 #808080;
 }
 input[type="file"]:hover {
-  border: 1.5px solid #f76d6d;
+  border: 2px solid #000080;
 }
 
 button {
-  background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 0.7rem 2.2rem;
+  background: #c0c0c0;
+  color: #000;
+  border: 2px solid #808080;
+  border-radius: 0;
+  padding: 0.5rem 2rem;
   font-size: 1.1rem;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
   font-weight: bold;
   margin-top: 0.5rem;
   margin-bottom: 1.5rem;
   cursor: pointer;
-  box-shadow: 0 2px 8px 0 rgba(253, 160, 133, 0.15);
+  box-shadow: 2px 2px 0 0 #fff, 4px 4px 0 0 #808080;
   transition: background 0.2s, transform 0.1s;
 }
 button:hover {
-  background: linear-gradient(90deg, #f76d6d 0%, #fda085 100%);
-  transform: scale(1.05);
+  background: #000080;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 video, img {
   margin: 1.2rem 0 0.5rem 0;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px 0 rgba(253, 160, 133, 0.13);
+  border-radius: 0;
+  box-shadow: 2px 2px 0 0 #808080;
+  border: 2px solid #404040;
 }
 
 p {
-  color: #f76d6d;
+  color: #000;
   font-size: 1.1rem;
   margin-top: 2rem;
+  font-family: 'MS Sans Serif', Arial, sans-serif;
 }
 
-/* Fun emoji for the result */
 .result-emoji {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-thumb {
+  background: #808080;
+  border: 2px solid #fff;
 }
