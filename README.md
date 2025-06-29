@@ -2,7 +2,8 @@
 
 A retro-inspired, Windows 3.1-themed web app for converting video clips to GIFs—right in your browser! Powered by React, Vite, and ffmpeg.wasm.
 
-![GifMaker 3.1 Screenshot](./public/screenshot.png)
+![GifMaker 3.1 Screenshot](https://github.com/user-attachments/assets/740c82fd-79c3-40fc-afd8-4ee8edf33f2c)
+
 
 ## Features
 - 🎬 Convert your favorite video moments into GIFs
