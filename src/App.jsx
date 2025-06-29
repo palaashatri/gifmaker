@@ -32,18 +32,20 @@ function App() {
 
   return ready ? (
     <div className="App">
+      <h1>🎬 GifMaker</h1>
+      <p>Turn your favorite video moments into fun GIFs! ✨</p>
       { video && <video
         controls
         width="250"
         src={URL.createObjectURL(video)}>
       </video>}
-      <input type="file" onChange={(e) => setVideo(e.target.files?.item(0))} />
+      <input type="file" accept="video/*" onChange={(e) => setVideo(e.target.files?.item(0))} />
       <h3>Result</h3>
-      <button onClick={convertToGif}>Convert</button>
-      { gif && <img src={gif} width="250" />}
+      <button onClick={convertToGif} disabled={!video}>Convert</button>
+      { gif && <><div className="result-emoji">🎉</div><img src={gif} width="250" alt="Your GIF" /></>}
     </div>
   ) : (
-    <p>Loading...</p>
+    <p>Loading the magic... 🪄</p>
   );
 }
 

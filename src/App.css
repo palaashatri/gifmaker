@@ -1,14 +1,29 @@
-.App {
-  text-align: center;
-  padding-top: 10vh;
-  flex-direction: column;
-  display: flex;
-  align-items: center;
+/* App.css - Add some personality and modern style */
+body {
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
-video, img {
-  margin: 20px 0;
+.App {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  max-width: 420px;
+  margin: 7vh auto 0 auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: popin 0.7s cubic-bezier(.68,-0.55,.27,1.55);
 }
+
+@keyframes popin {
+  0% { transform: scale(0.8) translateY(40px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
 .App code {
   background: #FFF3;
   padding: 4px 8px;
@@ -50,4 +65,68 @@ video, img {
   to {
     transform: rotate(360deg);
   }
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #f76d6d;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+h3 {
+  color: #f76d6d;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type="file"] {
+  margin: 1.2rem 0 1.5rem 0;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #fda085;
+  background: #fff7f0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+input[type="file"]:hover {
+  border: 1.5px solid #f76d6d;
+}
+
+button {
+  background: linear-gradient(90deg, #fda085 0%, #f6d365 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(253, 160, 133, 0.15);
+  transition: background 0.2s, transform 0.1s;
+}
+button:hover {
+  background: linear-gradient(90deg, #f76d6d 0%, #fda085 100%);
+  transform: scale(1.05);
+}
+
+video, img {
+  margin: 1.2rem 0 0.5rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(253, 160, 133, 0.13);
+}
+
+p {
+  color: #f76d6d;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+/* Fun emoji for the result */
+.result-emoji {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
 }
